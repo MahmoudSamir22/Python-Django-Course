@@ -52,7 +52,7 @@ def monthly_challenge(request, month):
         challenge_text = monthly_challenges[month]
         # response_data = f"<h1>{challenge_text}</h1>"
         return render(request ,"challenges/challenge.html", {
-            "month_name": month.capitalize(),
+            "month_name": month,
             "text": challenge_text
         })
     except: 
